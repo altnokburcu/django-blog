@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class Post(models.Model): #Modelimizi nesne türünden tanımladık.
+class Post(models.Model): #Modelimizi nesne turunden tanimladik
     yazar = models.ForeignKey('auth.User')
     baslik = models.CharField(max_length=200) #kısa metinleri tanımlar.
     yazi = models.TextField() #uzun metinleri tanımlar.
