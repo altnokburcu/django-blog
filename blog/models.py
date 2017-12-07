@@ -12,6 +12,7 @@ class Post(models.Model): #Modelimizi nesne turunden tanimladik
     yayinlanma_tarihi = models.DateTimeField(
            blank=True, null=True)
 
+
     def yayinla(self):
         self.yayinlanma_tarihi = timezone.now()
         self.save()
